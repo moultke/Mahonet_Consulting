@@ -1,0 +1,28 @@
+# robots.txt for MahoneT HR Consulting
+# Updated: February 26, 2026
+
+# Allow all search engines to crawl the site
+User-agent: *
+Allow: /
+
+# Disallow admin and private pages
+Disallow: /admin.html
+Disallow: /admin/
+
+# Disallow email PHP files (backend only)
+Disallow: /send-email-secure.php
+Disallow: /send-email-smtp.php
+Disallow: /send-email.php
+
+# Disallow vendor/composer dependencies
+Disallow: /vendor/
+Disallow: /composer.json
+Disallow: /composer.lock
+
+# Allow CSS, JS, and images (important for SEO)
+Allow: /css/
+Allow: /js/
+Allow: /img/
+
+# Sitemap location
+Sitemap: https://mahonetconsulting.com/sitemap.xml

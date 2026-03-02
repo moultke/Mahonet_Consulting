@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Analytics - Replace G-XXXXXXXXXX with your GA4 Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+
+    <!-- Google Search Console - Replace VERIFICATION_CODE with your actual code -->
+    <meta name="google-site-verification" content="VERIFICATION_CODE">
+
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="img/MHRC.svg">
+    <link rel="apple-touch-icon" href="img/logo.jpg">
+
+    <title>Book Free HR Consultation - 30 Minute Strategy Session | MHRC</title>
+    <meta name="description" content="Schedule your free 30-minute HR consultation with MHRC. Get expert guidance on HR compliance, employee relations, recruiting, and more.">
+    <meta name="keywords" content="free HR consultation, HR strategy session, book HR consultant, HR consultation appointment, HR advice">
+    <link rel="canonical" href="https://mahonetconsulting.com/booking.html">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mahonetconsulting.com/booking.html">
+    <meta property="og:title" content="Book Free HR Consultation - 30 Minute Strategy Session | MHRC">
+    <meta property="og:description" content="Schedule your free 30-minute HR consultation with MHRC. Get expert guidance on HR compliance, employee relations, recruiting, and more.">
+    <meta property="og:image" content="https://mahonetconsulting.com/img/main-image.jpg">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:url" content="https://mahonetconsulting.com/booking.html">
+    <meta name="twitter:title" content="Book Free HR Consultation - 30 Minute Strategy Session | MHRC">
+    <meta name="twitter:description" content="Schedule your free 30-minute HR consultation with MHRC. Get expert guidance on HR compliance, employee relations, recruiting, and more.">
+    <meta name="twitter:image" content="https://mahonetconsulting.com/img/main-image.jpg">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Breadcrumb Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://mahonetconsulting.com/"},
+        {"@type": "ListItem", "position": 2, "name": "Book Consultation", "item": "https://mahonetconsulting.com/booking.html"}
+      ]
+    }
+    </script>
+    <style>
+        .booking-hero {
+            background: linear-gradient(135deg, var(--primary-eggplant) 0%, #7a1a39 100%);
+            color: var(--white);
+            padding: 80px 0 60px;
+            text-align: center;
+        }
+
+        .booking-hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .booking-hero p {
+            font-size: 1.25rem;
+            opacity: 0.95;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .booking-section {
+            padding: 80px 0;
+        }
+
+        .booking-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .booking-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: start;
+        }
+
+        .booking-info {
+            background: var(--light-gray);
+            padding: 40px;
+            border-radius: 12px;
+            position: sticky;
+            top: 100px;
+        }
+
+        .booking-info h2 {
+            color: var(--primary-eggplant);
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .booking-details {
+            margin-bottom: 2rem;
+        }
+
+        .detail-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-icon {
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .detail-text h3 {
+            color: var(--primary-eggplant);
+            font-size: 1.125rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-text p {
+            color: var(--medium-gray);
+            line-height: 1.6;
+        }
+
+        .benefits-box {
+            background: var(--white);
+            padding: 25px;
+            border-radius: 8px;
+            border-left: 4px solid var(--primary-orange);
+        }
+
+        .benefits-box h3 {
+            color: var(--primary-eggplant);
+            margin-bottom: 1rem;
+        }
+
+        .benefits-box ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .benefits-box li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .benefits-box li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--primary-orange);
+            font-weight: bold;
+        }
+
+        .booking-form-wrapper {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .booking-form-wrapper h2 {
+            color: var(--primary-eggplant);
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .booking-form-wrapper .subtitle {
+            color: var(--medium-gray);
+            margin-bottom: 2rem;
+        }
+
+        .form-steps {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        .form-steps::before {
+            content: '';
+            position: absolute;
+            top: 20px;
+            left: 10%;
+            right: 10%;
+            height: 2px;
+            background: var(--border-gray);
+            z-index: 0;
+        }
+
+        .step {
+            text-align: center;
+            flex: 1;
+            position: relative;
+            z-index: 1;
+        }
+
+        .step-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--white);
+            border: 3px solid var(--border-gray);
+            margin: 0 auto 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--medium-gray);
+            transition: all 0.3s;
+        }
+
+        .step.active .step-circle {
+            background: var(--primary-eggplant);
+            border-color: var(--primary-eggplant);
+            color: var(--white);
+        }
+
+        .step.completed .step-circle {
+            background: var(--primary-orange);
+            border-color: var(--primary-orange);
+            color: var(--white);
+        }
+
+        .step-label {
+            font-size: 0.875rem;
+            color: var(--medium-gray);
+        }
+
+        .step.active .step-label {
+            color: var(--primary-eggplant);
+            font-weight: 600;
+        }
+
+        .form-step {
+            display: none;
+        }
+
+        .form-step.active {
+            display: block;
+        }
+
+        .calendar-wrapper {
+            margin-bottom: 2rem;
+        }
+
+        .calendar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+        }
+
+        .calendar-header h3 {
+            color: var(--primary-eggplant);
+            font-size: 1.25rem;
+        }
+
+        .calendar-nav {
+            display: flex;
+            gap: 10px;
+        }
+
+        .calendar-nav button {
+            background: var(--light-gray);
+            border: none;
+            padding: 8px 15px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.3s;
+        }
+
+        .calendar-nav button:hover {
+            background: var(--border-gray);
+        }
+
+        .calendar-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+        }
+
+        .calendar-day-header {
+            text-align: center;
+            font-weight: 600;
+            color: var(--medium-gray);
+            padding: 10px;
+            font-size: 0.875rem;
+        }
+
+        .calendar-day {
+            aspect-ratio: 1;
+            border: 2px solid var(--border-gray);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            background: var(--white);
+            font-weight: 500;
+        }
+
+        .calendar-day:hover:not(.disabled):not(.empty) {
+            border-color: var(--primary-orange);
+            background: rgba(255, 107, 53, 0.1);
+        }
+
+        .calendar-day.selected {
+            background: var(--primary-eggplant);
+            border-color: var(--primary-eggplant);
+            color: var(--white);
+        }
+
+        .calendar-day.disabled {
+            background: var(--light-gray);
+            color: var(--border-gray);
+            cursor: not-allowed;
+        }
+
+        .calendar-day.empty {
+            border: none;
+            cursor: default;
+        }
+
+        .time-slots {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 10px;
+            margin-bottom: 2rem;
+        }
+
+        .time-slot {
+            padding: 12px;
+            border: 2px solid var(--border-gray);
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+
+        .time-slot:hover {
+            border-color: var(--primary-orange);
+            background: rgba(255, 107, 53, 0.1);
+        }
+
+        .time-slot.selected {
+            background: var(--primary-eggplant);
+            border-color: var(--primary-eggplant);
+            color: var(--white);
+        }
+
+        .time-slot.disabled {
+            background: var(--light-gray);
+            color: var(--border-gray);
+            cursor: not-allowed;
+        }
+
+        .form-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 2rem;
+            gap: 1rem;
+        }
+
+        .btn-back {
+            background: transparent;
+            color: var(--medium-gray);
+            border: 2px solid var(--border-gray);
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-back:hover {
+            border-color: var(--primary-eggplant);
+            color: var(--primary-eggplant);
+        }
+
+        .btn-next {
+            background: var(--primary-orange);
+            color: var(--white);
+            border: none;
+            padding: 12px 28px;
+            border-radius: 6px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .btn-next:hover {
+            background: #e55a25;
+        }
+
+        .btn-next:disabled {
+            background: var(--border-gray);
+            cursor: not-allowed;
+        }
+
+        .success-message {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .success-icon {
+            font-size: 5rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-message h3 {
+            color: var(--primary-eggplant);
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .success-message p {
+            color: var(--medium-gray);
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+
+        .booking-summary {
+            background: var(--light-gray);
+            padding: 20px;
+            border-radius: 8px;
+            margin: 2rem 0;
+        }
+
+        .booking-summary h4 {
+            color: var(--primary-eggplant);
+            margin-bottom: 1rem;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-gray);
+        }
+
+        .summary-item:last-child {
+            border-bottom: none;
+        }
+
+        .summary-label {
+            font-weight: 600;
+            color: var(--medium-gray);
+        }
+
+        @media (max-width: 768px) {
+            .booking-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .booking-info {
+                position: static;
+            }
+
+            .calendar-grid {
+                gap: 4px;
+            }
+
+            .calendar-day {
+                font-size: 0.875rem;
+            }
+
+            .time-slots {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .form-navigation {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Phone Banner -->
+    <div class="top-banner">
+        <span class="phone-icon">📞</span>Call us at <a href="tel:+12162458367">+1-216-245-8367</a>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a href="index.html" class="logo"><img src="img/logo.jpg" alt="MHRC"></a>
+                <ul class="nav-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html#meet-terris">Meet Terris</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="booking.html" class="btn-primary active">Book Free Consultation</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Booking Hero -->
+        <section class="booking-hero">
+            <div class="container">
+                <h1>Book Your Free 30-Minute Consultation</h1>
+                <p>Let's discuss your HR needs and how MHRC can help strengthen your team and keep you compliant.</p>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section class="booking-section">
+            <div class="container booking-container">
+                <div class="booking-grid">
+                    <!-- Booking Info -->
+                    <div class="booking-info">
+                        <h2>What to Expect</h2>
+
+                        <div class="booking-details">
+                            <div class="detail-item">
+                                <div class="detail-icon">📅</div>
+                                <div class="detail-text">
+                                    <h3>Suggested Time Slot</h3>
+                                    <p><strong>Your selected date and time is a request.</strong> We'll confirm availability within 24 hours and send a calendar invite.</p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon">⏱️</div>
+                                <div class="detail-text">
+                                    <h3>30 Minutes</h3>
+                                    <p>A focused conversation about your specific HR challenges and goals.</p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon">💬</div>
+                                <div class="detail-text">
+                                    <h3>Virtual or Phone</h3>
+                                    <p>Choose your preferred meeting format. We'll send a Zoom link or call you directly after confirmation.</p>
+                                </div>
+                            </div>
+
+                            <div class="detail-item">
+                                <div class="detail-icon">🎯</div>
+                                <div class="detail-text">
+                                    <h3>Tailored Insights</h3>
+                                    <p>Walk away with actionable next steps, even if we don't work together.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="benefits-box">
+                            <h3>During Your Consultation:</h3>
+                            <ul>
+                                <li>Discuss your current HR pain points</li>
+                                <li>Explore compliance concerns (CARF, OHMAS, etc.)</li>
+                                <li>Get clarity on hiring and retention</li>
+                                <li>Learn how MHRC can support your business</li>
+                                <li>Receive a customized action plan</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Booking Form -->
+                    <div class="booking-form-wrapper">
+                        <h2>Schedule Your Consultation</h2>
+                        <p class="subtitle">Complete the steps below to book your free session</p>
+
+                        <!-- Steps Indicator -->
+                        <div class="form-steps">
+                            <div class="step active" data-step="1">
+                                <div class="step-circle">1</div>
+                                <div class="step-label">Date</div>
+                            </div>
+                            <div class="step" data-step="2">
+                                <div class="step-circle">2</div>
+                                <div class="step-label">Time</div>
+                            </div>
+                            <div class="step" data-step="3">
+                                <div class="step-circle">3</div>
+                                <div class="step-label">Details</div>
+                            </div>
+                            <div class="step" data-step="4">
+                                <div class="step-circle">4</div>
+                                <div class="step-label">Confirm</div>
+                            </div>
+                        </div>
+
+                        <form id="bookingForm">
+                            <!-- Step 1: Select Date -->
+                            <div class="form-step active" data-step="1">
+                                <div class="calendar-wrapper">
+                                    <div class="calendar-header">
+                                        <h3 id="currentMonth"></h3>
+                                        <div class="calendar-nav">
+                                            <button type="button" id="prevMonth">‹ Prev</button>
+                                            <button type="button" id="nextMonth">Next ›</button>
+                                        </div>
+                                    </div>
+                                    <div class="calendar-grid" id="calendar"></div>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Select Time -->
+                            <div class="form-step" data-step="2">
+                                <h3 style="color: var(--primary-eggplant); margin-bottom: 1rem;">Select a Time</h3>
+                                <p style="color: var(--medium-gray); margin-bottom: 2rem;">All times are shown in EST</p>
+                                <div class="time-slots" id="timeSlots"></div>
+                            </div>
+
+                            <!-- Step 3: Your Details -->
+                            <div class="form-step" data-step="3">
+                                <h3 style="color: var(--primary-eggplant); margin-bottom: 1.5rem;">Your Information</h3>
+
+                                <div class="form-group">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="organization">Organization Name</label>
+                                    <input type="text" id="organization" name="organization">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="meetingType">Preferred Meeting Format *</label>
+                                    <select id="meetingType" name="meetingType" required>
+                                        <option value="">Select format</option>
+                                        <option value="zoom">Video Call (Zoom)</option>
+                                        <option value="phone">Phone Call</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="message">What would you like to discuss? (Optional)</label>
+                                    <textarea id="message" name="message" rows="4" placeholder="Tell us briefly about your HR challenges or what you'd like help with..."></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Step 4: Confirm -->
+                            <div class="form-step" data-step="4">
+                                <h3 style="color: var(--primary-eggplant); margin-bottom: 1rem;">Review Your Booking Request</h3>
+                                <div class="booking-summary" id="bookingSummary"></div>
+                                <div style="background: #fff3e0; border-left: 4px solid #FF6B35; padding: 15px; margin: 20px 0; border-radius: 4px;">
+                                    <p style="margin: 0; color: #333; font-size: 0.95rem;">
+                                        <strong>📅 Please Note:</strong> This is a <strong>requested time slot</strong>. We will confirm availability within 24 hours and send you a calendar invite with the confirmed time or suggest alternative slots if needed.
+                                    </p>
+                                </div>
+                                <p style="color: var(--medium-gray); font-size: 0.95rem;">
+                                    By submitting this request, you agree to receive a confirmation email. You can reschedule or cancel anytime by contacting us.
+                                </p>
+                            </div>
+
+                            <!-- Success Message -->
+                            <div class="form-step" data-step="5">
+                                <div class="success-message">
+                                    <div class="success-icon">✅</div>
+                                    <h3>Consultation Request Received!</h3>
+                                    <p>Thank you for requesting a consultation with MHRC.</p>
+                                    <p>We've sent a confirmation email to <strong id="confirmedEmail"></strong>.</p>
+
+                                    <div style="background: #fff3e0; border-left: 4px solid #FF6B35; padding: 20px; margin: 25px 0; text-align: left; border-radius: 4px;">
+                                        <h4 style="margin-top: 0; color: #571326;">📅 What Happens Next?</h4>
+                                        <p style="margin: 10px 0;"><strong>1. Check Your Email (Now!)</strong><br>
+                                        We've sent a confirmation email to <strong id="confirmedEmail2"></strong> with your requested details and what to expect.</p>
+
+                                        <p style="margin: 15px 0 10px 0;"><strong>2. Within 24 Hours:</strong></p>
+                                        <ul style="margin: 5px 0; padding-left: 20px;">
+                                            <li>We'll review your requested time slot and confirm availability</li>
+                                            <li>You'll receive a follow-up email with either a calendar invite (if the time works) or alternative time suggestions</li>
+                                            <li>Meeting details (Zoom link or phone number) will be included</li>
+                                        </ul>
+                                        <p style="margin: 15px 0 0 0;"><strong>📧 Check your inbox and spam folder</strong> for both emails!</p>
+                                    </div>
+
+                                    <div class="booking-summary" id="finalSummary"></div>
+                                    <a href="index.html" class="btn-primary" style="margin-top: 2rem;">Return to Home</a>
+                                </div>
+                            </div>
+
+                            <!-- Form Navigation -->
+                            <div class="form-navigation" id="formNavigation">
+                                <button type="button" class="btn-back" id="backBtn" style="display: none;">← Back</button>
+                                <button type="button" class="btn-next" id="nextBtn">Next →</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo"><img src="img/logo-white.png" alt="MHRC"></div>
+                    <p>Empowering small businesses with personalized, strategic HR solutions—so they can focus on their mission, not their HR challenges.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services.html#compliance">HR Compliance & Audits</a></li>
+                        <li><a href="services.html#recruiting">Recruiting & Talent</a></li>
+                        <li><a href="services.html#policy">Policy & Handbooks</a></li>
+                        <li><a href="services.html#relations">Employee Relations</a></li>
+                        <li><a href="services.html#coaching">Leadership Coaching</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <p>📞 <a href="tel:+12162458367" style="color: var(--white); text-decoration: none;">+1-216-245-8367</a></p>
+                    <p>Ready to get started?</p>
+                    <a href="booking.html" class="btn-footer">Book Consultation</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 MHRC. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/booking.js"></script>
+</body>
+</html>
