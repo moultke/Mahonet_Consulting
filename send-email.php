@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 define('SMTP_HOST', 'mail.mahonetconsulting.com');
 define('SMTP_PORT', 465);
 define('SMTP_USERNAME', 'reply@mahonetconsulting.com');
-define('SMTP_PASSWORD', 'Terris27HRQu33n');
+define('SMTP_PASSWORD', 'YOUR_ACTUAL_PASSWORD_HERE'); // Replace this!
 define('SMTP_FROM', 'reply@mahonetconsulting.com');
 define('SMTP_FROM_NAME', 'MahoneT HR Consulting Website');
 define('SMTP_TO', 'reply@mahonetconsulting.com');

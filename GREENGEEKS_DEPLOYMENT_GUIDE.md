@@ -673,7 +673,7 @@ chmod 644 img/*.png
    - Log into GreenGeeks client area
    - Services → My Services
    - Select your hosting
-   2
+   22
 ### Getting Additional Help
 
 **GreenGeeks Support:**
