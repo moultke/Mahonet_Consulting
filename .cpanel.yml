@@ -1,0 +1,13 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/mahonet/public_html/
+    - /bin/cp -R *.html $DEPLOYPATH/
+    - /bin/cp -R css/ $DEPLOYPATH/css/
+    - /bin/cp -R js/ $DEPLOYPATH/js/
+    - /bin/cp -R img/ $DEPLOYPATH/img/
+    - /bin/cp -R vendor/ $DEPLOYPATH/vendor/
+    - /bin/cp -R *.php $DEPLOYPATH/
+    - /bin/cp favicon.ico $DEPLOYPATH/
+    - /bin/cp robots.txt $DEPLOYPATH/
+    - /bin/cp sitemap.xml $DEPLOYPATH/
