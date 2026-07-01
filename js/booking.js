@@ -142,12 +142,7 @@ function renderTimeSlots() {
         slot.className = 'time-slot';
         slot.textContent = time;
 
-        // For demo, randomly disable some slots
-        if (Math.random() > 0.7) {
-            slot.classList.add('disabled');
-        } else {
-            slot.addEventListener('click', () => selectTime(time, slot));
-        }
+        slot.addEventListener('click', () => selectTime(time, slot));
 
         if (selectedTime === time) {
             slot.classList.add('selected');
@@ -198,6 +193,20 @@ function handleNext() {
 
         if (!name || !email || !phone || !meetingType) {
             alert('Please fill in all required fields.');
+            return;
+        }
+
+        // Validate email format
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            alert('Please enter a valid email address.');
+            return;
+        }
+
+        // Validate phone format (at least 10 digits)
+        const phoneDigits = phone.replace(/\D/g, '');
+        if (phoneDigits.length < 10) {
+            alert('Please enter a valid phone number (at least 10 digits).');
             return;
         }
 

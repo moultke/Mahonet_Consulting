@@ -43,14 +43,26 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
     exit;
 }
 
-// Email configuration - Replace with your actual password
-define('SMTP_HOST', 'mail.mahonetconsulting.com');
-define('SMTP_PORT', 465);
-define('SMTP_USERNAME', 'reply@mahonetconsulting.com');
-define('SMTP_PASSWORD', 'TerrisHRQU33n'); // Replace this!
-define('SMTP_FROM', 'reply@mahonetconsulting.com');
+// Email configuration - credentials loaded from environment or .env file
+// On cPanel, set these in cPanel > Setup PHP Variables, or create a .env file in the site root
+$envFile = __DIR__ . '/.env';
+if (file_exists($envFile)) {
+    $envLines = file($envFile, FILE_IGNORE_NEW_LINES | FILE_SKIP_EMPTY_LINES);
+    foreach ($envLines as $line) {
+        if (strpos($line, '#') === 0) continue;
+        if (strpos($line, '=') !== false) {
+            putenv(trim($line));
+        }
+    }
+}
+
+define('SMTP_HOST', getenv('SMTP_HOST') ?: 'mail.mahonetconsulting.com');
+define('SMTP_PORT', getenv('SMTP_PORT') ?: 465);
+define('SMTP_USERNAME', getenv('SMTP_USERNAME') ?: 'reply@mahonetconsulting.com');
+define('SMTP_PASSWORD', getenv('SMTP_PASSWORD') ?: '');
+define('SMTP_FROM', getenv('SMTP_FROM') ?: 'reply@mahonetconsulting.com');
 define('SMTP_FROM_NAME', 'MahoneT HR Consulting Website');
-define('SMTP_TO', 'reply@mahonetconsulting.com');
+define('SMTP_TO', getenv('SMTP_TO') ?: 'reply@mahonetconsulting.com');
 define('SMTP_TO_NAME', 'MahoneT HR Consulting');
 
 // Get POST data
