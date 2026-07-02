@@ -70,8 +70,10 @@ document.addEventListener('DOMContentLoaded', function() {
             // Save to local storage (for backup)
             saveConsultationRequest(data);
 
-            // Send email via backend
-            fetch('send-email-secure.php', {
+            // Send email via backend — use Azure API on static hosts, PHP on cPanel
+            const isAzure = window.location.hostname.includes('azurestaticapps.net');
+            const emailEndpoint = isAzure ? '/api/send-email' : 'send-email-secure.php';
+            fetch(emailEndpoint, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
